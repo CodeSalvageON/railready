@@ -1,0 +1,10 @@
+#window {
+  width: 1120px;
+  height: 600px;
+  background-size: 100%;
+}
+
+#machine_gun_fire {
+  width: 150px;
+  height: 150px;
+}
