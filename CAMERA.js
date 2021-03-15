@@ -186,7 +186,7 @@ let victim_13_hp = 200;
 let victim_14_hp = 700;
 let victim_15_hp = 300;
 let victim_16_hp = 300;
-let victim_16_hp = 1200;
+let victim_17_hp = 1200;
 
 let victim_1_status = "alive";
 let victim_2_status = "alive";
@@ -628,6 +628,7 @@ function renderSceneNine () {
     victim_16_y = Math.floor(Math.random() * (200 - 0) + 0);
 
     if (victim_15_status === "dead" && victim_16_status === "dead") {
+      clearInterval(randomXInterval);
       renderCutSceneSeven();
     }
 
@@ -682,7 +683,7 @@ function renderSceneTen () {
   victim_1_x = 10000;
 
   victim_17.onload = function () {
-    window_render.drawImage(victim_17, victim_17_x, victim_17_y);
+    window_render.drawImage(victim_17, victim_17_x, victim_17_y, 50, 50);
   }
   victim_17.src = victim_17_src;
 }
